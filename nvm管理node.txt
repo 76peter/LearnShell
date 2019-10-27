@@ -1,0 +1,47 @@
+﻿sudo yum install git
+
+curl -O https://raw.githubusercontent.com/creationix/nvm/v0.33.1/install.sh | bash
+
+根据自己的shell选择，我用的zsh
+  
+source ~/.bashrc
+  或
+source ~/.zshrc
+
+
+开始使用
+
+  常用命令一览
+
+  终端输入nvm,会看到帮助信息
+
+  3.1 nvm ls-remote
+
+  列出全部可以安装的版本
+
+  3.2 nvm install 版本号
+
+  安装指定版本,安装后默认使用该版本
+
+  nvm install v7.9.0
+
+  3.3 nvm use 版本号
+
+  切换指定版本，切换效果是全局
+
+  nvm use v.7.8.0
+
+  3.4 nvm current
+
+  查看当前使用的版本
+
+  3.5 nvm ls
+
+  查看该系统已经安装的版本，该命令也能看到当前使用的版本
+
+
+修改npm的下载地址为国内的淘宝地址
+npm config set registry https://registry.npm.taobao.org
+npm config get registry //查看上面的语句是否修改成功
+
+npm install -g cnpm --registry=https://registry.npm.taobao.org
